@@ -1,0 +1,21 @@
+.class{
+    background-color: rgb(250, 172, 172);
+    font-family: monospace;
+    font-weight: 550;
+    font-size: 16px;
+}
+#one{
+    color: blue;
+    font-size: 35px;
+}
+.cooler_class{
+    background-color: rgb(250, 172, 172);
+    font-size: 26px;
+    font-family: monospace;
+    font-weight: 550;
+}
+#another{
+    background-color: rgb(128, 250, 160);
+    font-weight: bold;
+    font-size:26px
+}

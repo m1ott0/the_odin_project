@@ -1,0 +1,23 @@
+*{
+    font-family: monospace;
+}
+img{
+    box-sizing: border-box;
+    width: 700px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 7px;
+}
+.content{
+    display:block;
+    padding: 10px;
+    margin-left: 20px;
+    list-style-position: inside;
+}
+body{
+    background-color: rgb(216, 216, 216);
+    
+}
+#title{
+    text-align: center;
+}
