@@ -22,8 +22,8 @@
 
 | Project | Description | Tech Stack | Links |
 | :--- | :--- | :--- | :--- |
-| **Landing Page** | Responsive institutional landing page | HTML5, CSS3 | [Source Code](./projects/landing_page) |
-| **Odin Recipes** | Interactive recipes web page | HTML5, CSS3 | [Source Code](./projects/odin_recipes) |
+| **Landing Page** | Responsive institutional landing page | HTML5, CSS3 | [Demo](https://m1ott0.github.io/the_odin_project/projects/landing_page/) \| [Code](./projects/landing_page) |
+| **Odin Recipes** | Interactive recipes web page | HTML5, CSS3 | [Demo](https://m1ott0.github.io/the_odin_project/projects/odin_recipes/) \| [Code](./projects/odin_recipes) |
 
 ---
 
