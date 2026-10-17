@@ -1,8 +1,8 @@
 # Landing Page
 
-Meu primeiro projeto de landing page feito durante o The Odin Project.
+My first landing page project developed during The Odin Project curriculum.
 
-## Tecnologias Utilizadas
-- HTML
-- CSS
+## Technologies Used
+- HTML5
+- CSS3
 - Flexbox
