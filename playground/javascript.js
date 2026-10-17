@@ -19,5 +19,14 @@ function lastLetter(str) {
     let char = str.charAt(last)
     return char
 }
-console.log(capitalize(""))
-
+let answer = parseInt(prompt("Insira um numero:"))
+for (let i = 0; i <= answer; i++) {
+    if (i === 15) {
+        console.log("Minha idade!")
+    } else if (i === 43) {
+        console.log("Idade do meu Pai!")
+    } else {
+        console.log(i)
+    }
+ 
+}
