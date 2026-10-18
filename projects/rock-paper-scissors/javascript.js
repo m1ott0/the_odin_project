@@ -21,15 +21,15 @@ if (botInput === 0) {
 let stats;
 if (userInput === "ROCK" && botInput === "scissors" ||  userInput === "PAPER" && botInput === "rock" || userInput === "SCISSORS" && botInput === "paper") { 
     stats = 1
-    console.log("Round Result: Congratulations, you Win!") 
+    console.log("Round Result: Congratulations, you Win! + 1 point") 
 } else if (userInput === "ROCK" && botInput === "rock" ||  userInput === "PAPER" && botInput === "paper" || userInput === "SCISSORS" && botInput === "scissors") {
    stats  = 0
-    console.log("Round Result: Thats a tie!")
+    console.log("Round Result: Thats a tie! + 0 points")
 } else if (userInput === "ROCK" && botInput === "paper" ||  userInput === "PAPER" && botInput === "scissors" || userInput === "SCISSORS" && botInput === "rock") {
-    console.log("Round Result: You lose!")
+    console.log("Round Result: You lose! -1 point")
    stats = 2
 } else {
-    console.log("Invalid Answer, no Points!")
+    console.log("Round Result: Invalid Answer, no Points!")
 }
 if (stats === 1) {
     humanScore++
@@ -38,9 +38,9 @@ if (stats === 1) {
 }
 }
 // final score of the game:
-console.log("Good Game! Thats your score:")
+console.log("Good Game! Thats your final score:")
 console.log(humanScore)
-console.log("And thats the bot score:")
+console.log("And thats the bot’s final score:")
 console.log(botScore)
 if (humanScore > botScore) {
     console.log("Final Result: Congratulations, you Win the Game!")
