@@ -24,6 +24,7 @@
 | :--- | :--- | :--- | :--- |
 | **Landing Page** | Responsive institutional landing page | HTML5, CSS3 | [Demo](https://m1ott0.github.io/the_odin_project/projects/landing_page/) \| [Code](./projects/landing_page) |
 | **Odin Recipes** | Interactive recipes web page | HTML5, CSS3 | [Demo](https://m1ott0.github.io/the_odin_project/projects/odin_recipes/) \| [Code](./projects/odin_recipes) |
+| **Rock-Paper-Scissors** | Interactive console game | HTML5, JavaScript | [Demo](https://m1ott0.github.io/the_odin_project/projects/rock-paper-scissors/) \| [Code](./projects/rock-paper-scissors) |
 
 ---
 

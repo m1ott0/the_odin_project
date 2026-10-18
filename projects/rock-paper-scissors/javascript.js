@@ -2,6 +2,8 @@
 function getComputerChoice(n) {
    return Math.floor(Math.random() * n)
 }
+let start = prompt("Wanna start the game?(y/n)")
+if (start === "y") {
 let humanScore = 0
 let botScore = 0
 // the hole game
@@ -19,12 +21,12 @@ if (botInput === 0) {
 let stats;
 if (userInput === "ROCK" && botInput === "scissors" ||  userInput === "PAPER" && botInput === "rock" || userInput === "SCISSORS" && botInput === "paper") { 
     stats = 1
-    console.log("Congratulations, you Win!") 
+    console.log("Round Result: Congratulations, you Win!") 
 } else if (userInput === "ROCK" && botInput === "rock" ||  userInput === "PAPER" && botInput === "paper" || userInput === "SCISSORS" && botInput === "scissors") {
    stats  = 0
-    console.log("Thats a tie!")
+    console.log("Round Result: Thats a tie!")
 } else if (userInput === "ROCK" && botInput === "paper" ||  userInput === "PAPER" && botInput === "scissors" || userInput === "SCISSORS" && botInput === "rock") {
-    console.log("You lose!")
+    console.log("Round Result: You lose!")
    stats = 2
 } else {
     console.log("Invalid Answer, no Points!")
@@ -41,10 +43,14 @@ console.log(humanScore)
 console.log("And thats the bot score:")
 console.log(botScore)
 if (humanScore > botScore) {
-    console.log("Congratulations, you Win the Game!")
+    console.log("Final Result: Congratulations, you Win the Game!")
 } else if (humanScore === botScore) {
-    console.log("Thats a tie, there is no Winner!")
+    console.log("Final Result: Thats a tie, there is no Winner!")
 } else {
-    console.log("You lose the game!")
+    console.log("Final Result: You lose the game!")
 }
-
+} else if (start === "n") {
+    console.log("Bye bye then!")
+} else {
+    console.log("Invalid answer!")
+}
