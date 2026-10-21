@@ -1,4 +1,5 @@
-function multiply(n1, n2) {
-    return n1 * n2
+let soma = 0;
+for (let i = 1; i <= 100; i++) {;
+    soma = soma + i;
+    console.log(soma);
 }
-const result = multiply(4, 5)
