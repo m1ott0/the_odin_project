@@ -1,11 +1,4 @@
-const galaxy = ["sol", "lua", "planeta", "estrela"]
-function filterLongWords(array, num) {
-    let filterArray = []
-    for (let i = 0; i < array.length; i++) {
-        if (array[i].length >= num) {
-            filterArray.push(array[i])
-        }
-    }
-    return filterArray
-}
-console.log(filterLongWords(galaxy, 5))
+const titulo = document.querySelector('#titulo');
+titulo.textContent = 'Dom na pratica!';
+const paragrafo = document.querySelector('.mensagem');
+paragrafo.textContent = 'Estou entendendo aos poucos';
