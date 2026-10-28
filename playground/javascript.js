@@ -1,4 +1,4 @@
-const titulo = document.querySelector('#titulo');
-titulo.textContent = 'Dom na pratica!';
-const paragrafo = document.querySelector('.mensagem');
-paragrafo.textContent = 'Estou entendendo aos poucos';
+const botao = document.querySelector('#botao')
+const titulo = botao.getAttribute('title')
+botao.setAttribute('title', 'Pronto para continuar')
+botao.removeAttribute('title')
