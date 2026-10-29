@@ -1,4 +1,4 @@
-const botao = document.querySelector('#botao')
-const titulo = botao.getAttribute('title')
-botao.setAttribute('title', 'Pronto para continuar')
-botao.removeAttribute('title')
+const titulo = document.querySelector('#titulo')
+const paragrafos = document.querySelectorAll('.mensagem')
+titulo.textContent = 'Dom em revisao'
+paragrafos[1].textContent = 'Aprendi a manipular o DOM'
