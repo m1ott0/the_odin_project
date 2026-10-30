@@ -1,4 +1,8 @@
-const titulo = document.querySelector('#titulo')
-const paragrafos = document.querySelectorAll('.mensagem')
-titulo.textContent = 'Dom em revisao'
-paragrafos[1].textContent = 'Aprendi a manipular o DOM'
+const botoes = document.querySelectorAll('.opcao')
+const paragrafo = document.querySelector('#resultado')
+botoes.forEach(function(botao) {
+    botao.addEventListener('click', function(event) {
+        paragrafo.textContent = 'Tecnologia escolhida: ' + event.target.textContent
+        event.target.classList.add('escolhida')
+    })
+})
