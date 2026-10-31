@@ -9,34 +9,36 @@
 </head>
 <body>
     <div id="tabela">
-        <div>ROCK PAPER SCISSORS</div>
-        <div>Choose your move!</div>
+        <div class="title">ROCK PAPER SCISSORS</div>
+        <div class="title2">Choose your move!</div>
         <div id="options">
-            <div class="round-options"><button>🪨</button>
-            <div>Rock</div>
-            <div class="round-options"><button>📄</button>
-            <div>Paper</div>
-            <div class="round-options"><button>✂️</button>
-            <div>Scissors</div>
+            <div class="round-options">
+            <div><button id="rock" class="r-buttons">🪨</button></div>
+            <div class="emoji-txt">Rock</div>
+            </div>
+            <div class="round-options">
+            <div><button id="paper" class="r-buttons">📄</button></div>
+            <div class="emoji-txt">Paper</div>
+            </div>
+            <div class="round-options">
+            <div><button id="scissors" class="r-buttons">✂️</button></div>
+            <div class="emoji-txt">Scissors</div>
+            </div>
         </div>
-        </div>
-        <div>SCORE</div>
+        <div id="score-title">SCORE</div>
         <div class="score">
             <div class="round-score">
-            <div>YOU</div>
+            <div id="p-name">PLAYER</div>
             <div id="p-score">0</div>
             </div>
             <div class="round-score">
-                <div>-</div>
-            </div>
-            <div class="round-score">
                 <div>COMPUTER</div>
-                <div>0</div>
+                <div id="cp-score">0</div>
             </div>
         </div>
         <div>ROUND RESULT</div>
         <div id="final-result">Waiting for your choice...</div>
-        <button>RESTART THE GAME</button>
+        <button id="restart">RESTART THE GAME</button>
     </div>
 </body>
 </html>
