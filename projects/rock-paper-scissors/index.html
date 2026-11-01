@@ -9,6 +9,18 @@
 </head>
 <body>
     <div id="tabela">
+        <form id="formulario">
+        <div class="user">
+        <label for="username" id="label">Username:</label>
+        <input
+        id="username"
+        placeholder="ex:Username123"
+        maxlength="12"
+        type="text"
+        required>
+        </div>
+        <button id="submit" type="submit">Confirm</button>
+    </form>
         <div class="title">ROCK PAPER SCISSORS</div>
         <div class="title2">Choose your move!</div>
         <div id="options">
@@ -28,16 +40,16 @@
         <div id="score-title">SCORE</div>
         <div class="score">
             <div class="round-score">
-            <div id="p-name">PLAYER</div>
-            <div id="p-score">0</div>
+            <div id="playerName">PLAYER</div>
+            <div id="playerScore">0</div>
             </div>
             <div class="round-score">
                 <div>COMPUTER</div>
-                <div id="cp-score">0</div>
+                <div id="computerScore">0</div>
             </div>
         </div>
         <div>ROUND RESULT</div>
-        <div id="final-result">Waiting for your choice...</div>
+        <div id="roundResult">Waiting for your choice...</div>
         <button id="restart">RESTART THE GAME</button>
     </div>
 </body>
