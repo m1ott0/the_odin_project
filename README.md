@@ -22,9 +22,9 @@
 
 | Project | Description | Tech Stack | Links |
 | :--- | :--- | :--- | :--- |
-| **Landing Page** | Responsive landing page built with Flexbox | HTML5, CSS3 | [Demo](https://m1ott0.github.io/the_odin_project/projects/landing_page/) · [Code](./projects/landing_page) |
-| **Odin Recipes** | Multi-page recipe website with structured HTML | HTML5, CSS3 | [Demo](https://m1ott0.github.io/the_odin_project/projects/odin_recipes/) · [Code](./projects/odin_recipes) |
-| **Rock-Paper-Scissors** | Interactive browser-based game with customizable player name, score tracking, and restart functionality | HTML5, CSS3, JavaScript | [Demo](https://m1ott0.github.io/the_odin_project/projects/rock-paper-scissors/) · [Code](./projects/rock-paper-scissors) |
+| **Landing Page** | Responsive landing page built with Flexbox | HTML5, CSS3 | [Demo](https://m1ott0.github.io/the_odin_project/projects/landing_page/)  [Code](./projects/landing_page) |
+| **Odin Recipes** | Multi-page recipe website with structured HTML | HTML5, CSS3 | [Demo](https://m1ott0.github.io/the_odin_project/projects/odin_recipes/)  [Code](./projects/odin_recipes) |
+| **Rock-Paper-Scissors** | Interactive browser-based game with customizable player name, score tracking, and restart functionality | HTML5, CSS3, JavaScript | [Demo](https://m1ott0.github.io/the_odin_project/projects/rock-paper-scissors/)  [Code](./projects/rock-paper-scissors) |
 
 ---
 

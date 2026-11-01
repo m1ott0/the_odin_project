@@ -4,7 +4,7 @@ A brief description explaining what the project does and its main purpose.
 
 ## Preview
 
-[Live Demo](YOUR_LIVE_DEMO_URL)
+[Live Demo](https://m1ott0.github.io/the_odin_project/projects/rock-paper-scissors/)
 
 ## About
 
@@ -65,7 +65,7 @@ project-name/
 
 ## Author
 
-**Felipe Mioto**
+**Felipe Miotto**
 
 - GitHub: [@m1ott0](https://github.com/m1ott0)
     
