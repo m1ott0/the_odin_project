@@ -1,4 +1,4 @@
-# Project Name
+# Rock-Paper-Scissors
 
 A brief description explaining what the project does and its main purpose.
 
@@ -49,8 +49,8 @@ Once you enter the game, type you username and then press enter, then press the 
 
 ## Project Structure
 
-```text
-project-name/
+```
+rock-paper-scissors/
 ├── index.html
 ├── style.css
 ├── javascript.js
