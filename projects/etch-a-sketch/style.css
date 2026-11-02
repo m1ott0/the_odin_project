@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
+.square{
+    border: grey 1px solid;
+    height: 37.5px;
+    width: 37.5px;
+}
+.square:hover{
+    background-color: aqua;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    width: 600px;
+
+}
