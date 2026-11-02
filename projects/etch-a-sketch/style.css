@@ -2,20 +2,57 @@
     box-sizing: border-box;
 }
 body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
+    margin: 0;
+    background-color: #e5e5e5;
+}
+.toy{
+    border-radius: 27px ;
+    background-color: rgb(189, 2, 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 830px;
+    width: 850px;
+}
+.toyName{
+    display: flex;
+    color: rgb(199, 152, 22);
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 850px;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+}
+.normal{
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+}
+.classic{
+    font-family: Ephesis, serif;
+    font-size: 58px;
+    font-weight: bold;
+}
+.registred{
+    font-weight: bold;
+    font-size: 20px;
 }
 .square{
-    border: rgb(90, 89, 89) 1px solid;
-    height: 37.5px;
-    width: 37.5px;
+    border: rgb(138, 138, 138) 1px solid;
+    color: white;
 }
 .square:hover{
     background-color: rgb(0, 0, 0);
 }
 .permanentSquare{
     background-color: rgb(0, 0, 0);
-    height: 37.5px;
-    width: 37.5px;
 }
 .resetSquare{
     background-color: rgb(206, 206, 206);
@@ -25,5 +62,53 @@ body{
     flex-wrap: wrap;
     height: 600px;
     width: 600px;
+    background-color: white;
+    box-shadow: 0px 4px 8px 0px rgba(105, 105, 105, 0.836);
+}
 
+.buttons{
+    display: flex;
+    width: 850px;
+    height: 120px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+.reset{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+.grid{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;  
+}
+#resetButton,
+#gridButton{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    font-family: Commissioner, serif;
+    font-weight: 450;
+}
+#resetButton:active {
+    background-color: gray;
+}
+#gridButton:active {
+    background-color: gray;
+}
+.link{
+    text-decoration: none;
+    color: rgb(255, 149, 149);
+    transition: 0.5s;
+}
+.link:hover{
+    text-decoration:underline;
+    color: #ffffff;
+}
+.linkDiv{
+    padding-bottom: 0px;
 }
