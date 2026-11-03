@@ -80,6 +80,9 @@ etch-a-sketch/
     
 - Javascript concepts
     
+## Future Improvements
+
+- Rainbow Mode
 
 ## Author
 

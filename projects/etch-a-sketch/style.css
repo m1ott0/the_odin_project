@@ -54,6 +54,28 @@ body{
 .permanentSquare{
     background-color: rgb(0, 0, 0);
 }
+.red{
+    background-color: rgb(255, 81, 0);
+}
+.orange{
+    background-color: rgb(247, 132, 1);
+}
+.yellow{
+    background-color: rgb(245, 241, 0);
+}
+.green{
+    background-color: rgb(23, 250, 2);
+}
+.blue{
+    background-color: rgb(3, 83, 255);
+}
+.indigo{
+    background-color: rgb(40, 3, 252);
+}
+.violet{
+    background-color: rgb(141, 4, 253);
+}
+
 .resetSquare{
     background-color: rgb(206, 206, 206);
 }
@@ -111,4 +133,16 @@ body{
 }
 .linkDiv{
     padding-bottom: 0px;
+}
+#rainbowMode{
+    margin-top: 10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 15px;
+}
+#normalMode{
+    height: 20px;
+    width: 20px;
+    border-radius: 15px;
+    margin-left: 2px;
 }
