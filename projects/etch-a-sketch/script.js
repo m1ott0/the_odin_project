@@ -6,25 +6,13 @@ let totalAnswer;
 const container = document.querySelector('#container');
 let squareDivs;
 let color;
+let children;
+let currentMode;
 const sound = new Audio('Sounds/odin-audio1.wav');
 const error = new Audio('Sounds/572936__bloodpixelhero__error.wav');
 const sucess = new Audio('Sounds/sucessful1.wav');
 // rainbow colors
-const red = document.querySelectorAll('.red');
-let permanentRedDivs;
-const orange = document.querySelectorAll('.orange');
-let permanentOrangeDivs;
-const yellow = document.querySelectorAll('.yellow');
-let permanentYellowDivs;
-const green = document.querySelectorAll('.green');
-let permanentGreenDivs;
-const blue = document.querySelectorAll('.blue');
-let permanentBlueDivs;
-const indigo = document.querySelectorAll('.indigo');
-let permanentIndigoDivs;
-const violet = document.querySelectorAll('.violet');
-let permanentVioletDivs;
-const rainbowColors = [red, orange, yellow, green, blue, indigo, violet];
+const rainbowColors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 const normalModeButton = document.querySelector('#normalMode')
 const rainbowModeButton = document.querySelector('#rainbowMode')
 function rainbowSelection() {
@@ -41,54 +29,48 @@ for (let i = 0;i < totalAnswer; i++) {
     container.appendChild(newDivs);
     newDivs.style.height = squareDimension + 'px';
     newDivs.style.width = squareDimension + 'px';
+}
+    children = container.querySelectorAll('div')
+    children.forEach(function(div) {
+    div.addEventListener('mouseenter', function(event) {
+        if (currentMode === 'normal') {
+    event.target.classList.remove('red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet',)
+    event.target.classList.add('square')
+    event.target.classList.replace('square', 'permanentSquare')
+} else if (currentMode === 'rainbow') {
+    event.target.classList.remove('permanentSquare','red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet')
+    event.target.classList.add('square')
+            color = rainbowSelection()
+        if (color === 'red') {
+            event.target.classList.replace('square', 'red')
+        } else if (color === 'orange') {
+            event.target.classList.replace('square', 'orange')
+        } else if (color === 'yellow') {
+            event.target.classList.replace('square', 'yellow')
+        } else if (color === 'green') {
+            event.target.classList.replace('square', 'green')
+        } else if (color === 'blue') {
+            event.target.classList.replace('square', 'blue')
+        } else if (color === 'indigo') {
+            event.target.classList.replace('square', 'indigo')
+        } else if(color === 'violet') {
+            event.target.classList.replace('square', 'violet')
+        }
+}
+})
+})
 };
-};
+;
 // rainbow mode function
 rainbowModeButton.addEventListener('click', function() {
-    squareDivs = document.querySelectorAll('.square');
-    squareDivs.forEach(function(div) {
-        div.addEventListener('mouseenter' , function(event) {
-            color = rainbowSelection()
-        if (color === red) {
-            event.target.classList.replace('square', 'red')
-            permanentRedDivs = document.querySelectorAll('red')
-        } else if (color === orange) {
-            event.target.classList.replace('square', 'orange')
-            permanentOrangeDivs = document.querySelectorAll('.orange')
-        } else if (color === yellow) {
-            event.target.classList.replace('square', 'yellow')
-            permanentYellowDivs = document.querySelectorAll('.yellow')
-        } else if (color === green) {
-            event.target.classList.replace('square', 'green')
-            permanentGreenDivs = document.querySelectorAll('.green')
-        } else if (color === blue) {
-            event.target.classList.replace('square', 'blue')
-            permanentBlueDivs = document.querySelectorAll('blue')
-        } else if (color === indigo) {
-            event.target.classList.replace('square', 'indigo')
-            permanentIndigoDivs = document.querySelectorAll('.indigo')
-        } else if(color === violet) {
-            event.target.classList.replace('square', 'violet')
-            permanentVioletDivs = document.querySelectorAll('.violet')
-        }
-        })
-    })
-
+    currentMode = 'rainbow'
 })
 // permanent painting function
-function squarePainting() {
-squareDivs = document.querySelectorAll('.square');
-    squareDivs.forEach(function(div){
-        div.addEventListener('mouseenter', function(event) {
-        event.target.classList.replace('square', 'permanentSquare');
-        permanentRedDivs = document.querySelectorAll('.permanentSquare');
-    });
-});
-};
+
 // reset grid function
 function excludeGrid() {
     container.replaceChildren();
-};
+}
 // grid button functions
 gridButton.addEventListener('click', function() {
     sound.play(sound);
@@ -106,33 +88,15 @@ gridButton.addEventListener('click', function() {
     };
 });
 // normal mode button
-normalModeButton.addEventListener('click', squarePainting)
+normalModeButton.addEventListener('click', function() {
+    currentMode = 'normal'
+})
 // reset button
 const resetButton = document.querySelector('#resetButton');
 resetButton.addEventListener('click', function() {
     sound.play();
-permanentDivs.forEach(function(div) {
-    div.classList.replace('permanentSquare', 'square')
+children.forEach(function(div) { 
+div.classList.remove('red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet', 'permanentSquare')
+div.classList.add('square')
+})   
 })
-permanentRedDivs.forEach(function(div) {
-    div.classList.replace('red', 'square');
-});
-permanentOrangeDivs.forEach(function(div) {
-    div.classList.replace('orange', 'square');
-});
-permanentYellowDivs.forEach(function(div) {
-    div.classList.replace('yellow', 'square');
-});
-permanentGreenDivs.forEach(function(div) {
-    div.classList.replace('green', 'square');
-});
-permanentBlueDivs.forEach(function(div) {
-    div.classList.replace('blue', 'square');
-});
-permanentIndigoDivs.forEach(function(div) {
-    div.classList.replace('indigo', 'square');
-});
-permanentVioletDivs.forEach(function(div) {
-    div.classList.replace('violet', 'square');
-});
-});

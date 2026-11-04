@@ -16,8 +16,8 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 830px;
-    width: 850px;
+    height: 870px;
+    width: 890px;
 }
 .toyName{
     display: flex;
@@ -45,7 +45,7 @@ body{
     font-size: 20px;
 }
 .square{
-    border: rgb(138, 138, 138) 1px solid;
+    border: rgb(153, 153, 153) 1px solid;
     color: white;
 }
 .square:hover{
@@ -55,7 +55,7 @@ body{
     background-color: rgb(0, 0, 0);
 }
 .red{
-    background-color: rgb(255, 81, 0);
+    background-color: rgb(255, 0, 0);
 }
 .orange{
     background-color: rgb(247, 132, 1);
