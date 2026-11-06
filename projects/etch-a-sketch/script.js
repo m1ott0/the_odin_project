@@ -85,9 +85,9 @@ gridButton.addEventListener('click', function() {
     if (finalAnswer >= 0 && finalAnswer <= 100 && Number.isInteger(finalAnswer)) {
         filteredAnswer = finalAnswer ;
         totalAnswer = finalAnswer ** 2;
+        sucess.play();
         excludeGrid();
         createGrade();
-        sucess.play();
     } else {
         error.play();
         alert('Invalid Answer, Try again');
