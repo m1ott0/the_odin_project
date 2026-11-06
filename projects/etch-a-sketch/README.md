@@ -35,7 +35,7 @@ The game design is totally inspired in the classic etch-a-sketch released in Jul
 
 ## Usage
 
-The game purpose is to paint all the squares, first, select a grid on the grid button, after that, the selected grid will appear on screen and then you can play with it.And if you want to reset and do it again, you can press the reset button and restart the game.
+The game purpose is to paint all the squares, first, select a grid on the grid button, after that, the selected grid will appear on screen, and if you look down on the etch-a-sketch screen you'll see two buttons, the colorfull one is to change de painting mode to rgb, and the black one to default/normal mode.And if you want to reset and do it again, you can press the reset button and restart the game.
 
 ### Prerequisites
 
@@ -79,10 +79,6 @@ etch-a-sketch/
 - DOM manipulation
     
 - Javascript concepts
-    
-## Future Improvements
-
-- Rainbow Mode
 
 ## Author
 

@@ -23,11 +23,12 @@ body{
     display: flex;
     color: rgb(199, 152, 22);
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     width: 850px;
     justify-content: center;
     height: 60px;
     align-items: center;
+
 }
 .normal{
     font-size: 22px;
@@ -55,25 +56,25 @@ body{
     background-color: rgb(0, 0, 0);
 }
 .red{
-    background-color: rgb(255, 0, 0);
+    background-color: 	#FF0000;
 }
 .orange{
-    background-color: rgb(247, 132, 1);
+    background-color: 	#FF7F00;
 }
 .yellow{
-    background-color: rgb(245, 241, 0);
+    background-color: 	#FFFF00;
 }
 .green{
-    background-color: rgb(23, 250, 2);
+    background-color: 	#00FF00;
+}
+.lighterBlue{
+    background-color: #00E5FF;
 }
 .blue{
-    background-color: rgb(3, 83, 255);
-}
-.indigo{
-    background-color: rgb(40, 3, 252);
+    background-color: #2979FF;
 }
 .violet{
-    background-color: rgb(141, 4, 253);
+    background-color: #8B00FF;
 }
 
 .resetSquare{
@@ -86,35 +87,37 @@ body{
     width: 600px;
     background-color: white;
     box-shadow: 0px 4px 8px 0px rgba(105, 105, 105, 0.836);
+    margin-top: 10px;
 }
 
 .buttons{
     display: flex;
-    width: 850px;
+    width: 900px;
     height: 120px;
     align-items: center;
     justify-content: space-between;
-    padding: 40px;
+    padding: 50px;
 }
 .reset{
     display: flex;
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
+    height: 125px;
+    width: 125px;
+    border-radius:100px;
 }
 .grid{
     display: flex;
-    height: 100px;
-    width: 100px;
+    height: 125px;
+    width: 125px;
     border-radius: 50px;  
 }
 #resetButton,
 #gridButton{
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
+    height: 125px;
+    width: 125px;
+    border-radius:100px;
     font-family: Commissioner, serif;
-    font-weight: 450;
+    font-weight: 410;
+    font-size: 18px;
 }
 #resetButton:active {
     background-color: gray;
@@ -136,13 +139,21 @@ body{
 }
 #rainbowMode{
     margin-top: 10px;
-    height: 20px;
-    width: 20px;
-    border-radius: 15px;
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    background-color: #8B00FF;
+    border-color: #00FFFF;
+    transition: 0.2s;
+}
+#rainbowMode:active{
+    background-color: #00FFFF;
+    border-color: #8B00FF;
 }
 #normalMode{
-    height: 20px;
-    width: 20px;
-    border-radius: 15px;
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
     margin-left: 2px;
+    background-color: black;
 }
