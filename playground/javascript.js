@@ -1,16 +1,16 @@
-const perfil = {
-    nome: 'felipe',
-    idade: 15,
-    altura: '1,81m',
+let users = [
+  {id: 'john', name: "John Smith", age: 20},
+  {id: 'ann', name: "Ann Smith", age: 24},
+  {id: 'pete', name: "Pete Peterson", age: 31},
+];
 
-    computador: {
-        processor: 'ryzen 7 5700x',
-        placaDeVideo: 'rx 7900xt',
-    },
-    turnOn() {
-        console.log('uau')
-        console.log('teste')
-    }
-};
-delete perfil.idade
-const selecionado = perfil.computador.processor
+function groupByiD(arr) {
+    let userById = arr.reduce(function(acumulator, currentValue) {
+        const key = currentValue.id
+        acumulator[key] = currentValue
+        return acumulator
+
+    }, {})
+    return userById
+}
+console.log(groupByiD(users))
