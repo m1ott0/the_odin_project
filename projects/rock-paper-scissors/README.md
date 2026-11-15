@@ -66,7 +66,7 @@ The game keeps track of both scores and displays the result of each round. Playe
 ## Scoring System
 
 - Winning a round gives the winner one point.
-- Losing a round gives the winner one point.
+- Losing a round gives the computer one point.
 - A tie does not change either score.
 
 ## Project Structure

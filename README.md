@@ -34,13 +34,14 @@
 | [**Landing Page**](projects/landing_page/) | An astronomy-themed landing page. | [View](https://m1ott0.github.io/the_odin_project/projects/landing_page/) |
 | [**Rock Paper Scissors**](projects/rock-paper-scissors/) | An interactive JavaScript game. | [View](https://m1ott0.github.io/the_odin_project/projects/rock-paper-scissors/) |
 | [**Etch-a-Sketch**](projects/etch-a-sketch/) | A customizable interactive drawing grid. | [View](https://m1ott0.github.io/the_odin_project/projects/etch-a-sketch/) |
+| [**Calculator**](projects/etch-a-sketch/) | ⏳ In Progress ⏳ |
 
 ## Repository Structure
 
 ```text
 the_odin_project/
 │
-├── assingments/    # Course assignments
+├── assignments/    # Course assignments
 ├── exercises/      # Practice exercises
 ├── playground/     # Experiments and practice
 └── projects/       # Main projects
