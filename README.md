@@ -1,7 +1,7 @@
 # The Odin Project
 
 <p align="center">
-  **Full Stack JavaScript**
+  <strong>Full Stack JavaScript</strong>
   <br/>
   <sub>My collection of exercises, assignments, and projects from The Odin Project curriculum.</sub>
 </p>
@@ -40,7 +40,7 @@
 ```text
 the_odin_project/
 │
-├── assignments/    # Course assignments
+├── assingments/    # Course assignments
 ├── exercises/      # Practice exercises
 ├── playground/     # Experiments and practice
 └── projects/       # Main projects
@@ -53,7 +53,7 @@ the_odin_project/
 ---
 
 <p align="center">
-  **Felipe Miotto**
+  <strong>Felipe Miotto</strong>
   <br/>
   <sub>Student · Aspiring Full Stack Developer</sub>
   <br/><br/>
