@@ -1,16 +1,14 @@
-let users = [
-  {id: 'john', name: "John Smith", age: 20},
-  {id: 'ann', name: "Ann Smith", age: 24},
-  {id: 'pete', name: "Pete Peterson", age: 31},
-];
-
-function groupByiD(arr) {
-    let userById = arr.reduce(function(acumulator, currentValue) {
-        const key = currentValue.id
-        acumulator[key] = currentValue
-        return acumulator
-
-    }, {})
-    return userById
-}
-console.log(groupByiD(users))
+const usuarios = [
+    {name : "Felipe", age: 15},
+    {name: "Roberto", age: 43},
+    {name: "Robson", age: 32},
+    {name: "Marcelo", age: 57}
+]
+const testEvery = usuarios.every(u => u.age > 18)
+const testeSome = usuarios.some(u => u.age > 50)
+const testeFind = usuarios.find(u => u.age === 32)
+const testeFindIndex = usuarios.findIndex(u => u.age < 22)
+console.log(testeSome)
+console.log(testEvery)
+console.log(testeFind)
+console.log(testeFindIndex)

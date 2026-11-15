@@ -1,0 +1,17 @@
+.calculator{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 600px;
+    flex: 1
+
+}
+#panel{
+    background-color: rgb(53, 85, 53);
+    width: 400px;
+    height: 100px;
+    color: gray;
+    font-size: 20px;
+    
+}

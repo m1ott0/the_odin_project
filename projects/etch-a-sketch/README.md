@@ -1,91 +1,94 @@
 # Etch-A-Sketch
 
-Eatch-a-Sketch is a toy that is played by paiting the squares in the grid until no ones left.
+An interactive drawing grid inspired by the classic Etch A Sketch toy, developed as part of The Odin Project JavaScript curriculum.
+
+The project focuses on DOM manipulation, event listeners, functions, and managing interactive elements with JavaScript.
 
 ## Preview
 
 [Live Demo](https://m1ott0.github.io/the_odin_project/projects/etch-a-sketch/)
 
-  
 ## About
 
-The game design is totally inspired in the classic etch-a-sketch released in July 12, 1960. And follow its original purpose to, unless the fact that in this case you play with a mouse.
+The project is inspired by the original Etch A Sketch toy, first released in 1960.
+
+Instead of using physical knobs, this version allows users to draw by moving their mouse across a grid of squares.
+
+Users can customize the grid size, switch between normal and rainbow drawing modes, and reset the drawing whenever they want.
 
 ## Features
 
-- Custom Grid
-
-- Reset Button
-
-- Mouse Effects
-
-- Sound Effects
-
-- Classic Design
-    
+- Customizable grid size.
+- Normal drawing mode.
+- Rainbow drawing mode with randomly selected colors.
+- Reset button to clear the drawing.
+- Sound effects for interface interactions.
+- Classic Etch A Sketch-inspired design.
 
 ## Technologies Used
 
 - HTML5
-    
 - CSS3
-    
 - JavaScript
-    
 
-## Usage
-
-The game purpose is to paint all the squares, first, select a grid on the grid button, after that, the selected grid will appear on screen, and if you look down on the etch-a-sketch screen you'll see two buttons, the colorfull one is to change de painting mode to rgb, and the black one to default/normal mode.And if you want to reset and do it again, you can press the reset button and restart the game.
+## Getting Started
 
 ### Prerequisites
 
-- A modern web browser
-    
-- Git (optional)
-    
+- A modern web browser.
+- Git (optional).
 
 ### Installation
 
 1. Clone the repository:
-    
-    ```
-    git clone https://github.com/m1ott0/the_odin_project
-    ```
-    
+
+   ```bash
+   git clone https://github.com/m1ott0/the_odin_project.git
+   ```
+
 2. Navigate to the project directory:
-    
-    ```
-    cd projects/etch-a-sketch
-    ```
-    
+
+   ```bash
+   cd the_odin_project/projects/etch-a-sketch
+   ```
+
 3. Open `index.html` in your browser.
 
+## How to Use
+
+1. Press the **Grid Size** button.
+2. Enter the desired grid size (up to 100).
+3. Move your mouse over the squares to draw.
+4. Select the rainbow button to switch to rainbow mode.
+5. Select the normal button to return to normal drawing mode.
+6. Press **Reset** to clear the current drawing.
 
 ## Project Structure
 
-```
+```text
 etch-a-sketch/
+├── Sounds/
 ├── index.html
 ├── style.css
-├── javascript.js
-└── assets/
-    └── images/
+├── script.js
+└── README.md
 ```
 
 ## What I Learned
 
-- Flexbox skills
-    
-- DOM manipulation
-    
-- Javascript concepts
+- Creating and manipulating DOM elements.
+- Using event listeners to detect mouse interactions.
+- Working with functions and conditional logic.
+- Managing application state with variables.
+- Using arrays to store and select colors.
+- Dynamically changing CSS classes with JavaScript.
+- Implementing basic audio effects.
 
 ## Author
 
 **Felipe Miotto**
 
-- GitHub: [@m1ott0](https://github.com/m1ott0)
-    
+- [GitHub Profile](https://github.com/m1ott0)
 
 ## Acknowledgments
 

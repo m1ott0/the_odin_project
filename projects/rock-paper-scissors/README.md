@@ -1,6 +1,8 @@
-# Rock-Paper-Scissors
+# Rock Paper Scissors
 
-A brief description explaining what the project does and its main purpose.
+An interactive Rock Paper Scissors game developed as part of The Odin Project JavaScript curriculum.
+
+The project focuses on JavaScript fundamentals, functions, event listeners, DOM manipulation, and interactive browser functionality.
 
 ## Preview
 
@@ -8,14 +10,20 @@ A brief description explaining what the project does and its main purpose.
 
 ## About
 
-A simple rock-paper-scissors game, each round value is 1 point, round win value is +1 points, round loss is -1 points, and round tie is +0 points, you can also enter a username and anytime during the game change him to whatever you want, and if want to reset the game points and results, just press the 'RESTART THE GAME' button.
+A browser-based implementation of the classic Rock Paper Scissors game.
+
+Players can enter a username, choose between rock, paper, and scissors, and compete against the computer.
+
+The game keeps track of both scores and displays the result of each round. Players can restart the game whenever they want.
 
 ## Features
 
-- Username input
-- Score display
-- Round result
-- Restart button
+- Username input with a customizable player name.
+- Three possible moves: rock, paper, and scissors.
+- Random computer choices.
+- Automatic round result detection.
+- Player and computer score tracking.
+- Restart button to reset the scores and round result.
 
 ## Technologies Used
 
@@ -23,33 +31,47 @@ A simple rock-paper-scissors game, each round value is 1 point, round win value 
 - CSS3
 - JavaScript
 
+## Getting Started
+
 ### Prerequisites
 
-- A modern web browser
+- A modern web browser.
+- Git (optional).
 
 ### Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/m1ott0/the_odin_project/tree/main/projects/rock-paper-scissors
+   git clone https://github.com/m1ott0/the_odin_project.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd .../rock-paper-scissors
+   cd the_odin_project/projects/rock-paper-scissors
    ```
 
 3. Open `index.html` in your browser.
 
-## Usage
+## How to Play
 
-Once you enter the game, type you username and then press enter, then press the move you want, and after that the round result will be displayed in the bottom of the game, and wahtever you want you can reset the score pressing the "RESTART THE GAME" button.
+1. Enter your username in the input field.
+2. Confirm your username.
+3. Choose rock, paper, or scissors.
+4. The computer randomly selects its move.
+5. The game displays the round result and updates the scores.
+6. Use the restart button to reset the game.
+
+## Scoring System
+
+- Winning a round gives the winner one point.
+- Losing a round gives the winner one point.
+- A tie does not change either score.
 
 ## Project Structure
 
-```
+```text
 rock-paper-scissors/
 ├── index.html
 ├── style.css
@@ -59,16 +81,19 @@ rock-paper-scissors/
 
 ## What I Learned
 
-- How to display a username input
-- How to make a simple interactive game
-- How to play with functions and DOM
+- Working with JavaScript functions.
+- Using event listeners to handle user interactions.
+- Manipulating the DOM.
+- Generating random values.
+- Implementing conditional logic.
+- Updating webpage content dynamically.
+- Managing variables and game state.
 
 ## Author
 
 **Felipe Miotto**
 
-- GitHub: [@m1ott0](https://github.com/m1ott0)
-    
+- [GitHub Profile](https://github.com/m1ott0)
 
 ## Acknowledgments
 
