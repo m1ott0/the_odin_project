@@ -1,11 +1,4 @@
-let firstNumber;
-let secondNumber;
-let currentOperator;
-let operators;
-let result;
-let aValue;
-let bValue;
-let ans;
+// Calculator Buttons and Screen variables
 const panel = document.querySelector('.panel')
 const record = document.querySelector('.record')
 const numbers = document.querySelectorAll('.numbers');
@@ -15,6 +8,14 @@ const del = document.querySelector('.delete');
 const equal = document.querySelector('.equal');
 const decimalNumber = document.querySelector('.dot') 
 const changeValueButton = document.querySelector('.change')
+// Operation variables
+let firstNumber;
+let secondNumber;
+let currentOperator;
+let result;
+let aValue;
+let bValue;
+// Operation functions
 function add(a, b) {
     return a + b;
 };
@@ -40,27 +41,30 @@ function operate(operator, n1, n2) {
     };
     return operationResult
 };
+// Operation result function
 function equalOperation() {
     if (firstNumber !== undefined && currentOperator !== undefined && secondNumber !== undefined ) {
     aValue = Number(firstNumber)
     bValue = Number(secondNumber)
     result = operate(currentOperator, aValue, bValue)
+    record.textContent = firstNumber + currentOperator + secondNumber
     panel.textContent = result
     firstNumber = result
-    operators = undefined
     secondNumber = undefined
     }
 }
+// Clear screen function
 function clear() {
     panel.textContent = ''
+    record.textContent = ''
     firstNumber = undefined
     secondNumber = undefined
     currentOperator = undefined
-    operators = undefined
     result = undefined
     aValue = undefined
     bValue = undefined
 }
+// Delete last character function
 function deleteLast() {
     if (panel.textContent === firstNumber.toString()) {
     let lastChar = panel.textContent.slice(0, -1)
@@ -77,6 +81,7 @@ function deleteLast() {
     currentOperator = lastChar
     }
 }
+// Decimal button function
 function decimalValue() {
     if (panel.textContent === secondNumber && secondNumber.includes('.') === false) {
         panel.textContent += '.'
@@ -86,8 +91,9 @@ function decimalValue() {
         firstNumber = panel.textContent
     }
 }
+// Change signal button function
 function changeSignal() {
-    if (Number(secondNumber) > 0 && panel.textContent === secondNumber.toString()) {
+     if (Number(secondNumber) > 0 && panel.textContent === secondNumber.toString()) {
         panel.textContent = '-' + panel.textContent
         secondNumber = panel.textContent
     } else if (Number(secondNumber) < 0 && panel.textContent === secondNumber.toString()) {
@@ -101,10 +107,18 @@ function changeSignal() {
         firstNumber = panel.textContent
         }
     }
-
+// Numbers button interaction
 numbers.forEach(function(number) {
     number.addEventListener('click', function() {
-        if (panel.textContent === '+' || panel.textContent === '-' || panel.textContent === 'x' || panel.textContent === '÷') {
+        if (panel.textContent.length > 12) {
+            panel.textContent = ''
+            firstNumber = undefined
+            secondNumber = undefined
+            currentOperator = undefined
+            result = undefined
+            aValue = undefined
+            bValue = undefined
+        } else if (panel.textContent === '+' || panel.textContent === '-' || panel.textContent === 'x' || panel.textContent === '÷') {
             panel.textContent = ''
             panel.textContent = number.textContent
             secondNumber = panel.textContent
@@ -117,6 +131,7 @@ numbers.forEach(function(number) {
         } 
     });
 });
+// Operators button interaction
 operator.forEach(function(operator) {
     operator.addEventListener('click', function() {
         if (secondNumber !== undefined){
@@ -129,8 +144,13 @@ operator.forEach(function(operator) {
         }
     })
 })
+// Equal button interaction
 equal.addEventListener('click', equalOperation)
+// AC button interaction
 ac.addEventListener('click', clear)
+// DEL button interaction
 del.addEventListener('click', deleteLast)
+//  Decimal button interaction
 decimalNumber.addEventListener('click', decimalValue)
+// Change signal button interaction
 changeValueButton.addEventListener('click', changeSignal)
