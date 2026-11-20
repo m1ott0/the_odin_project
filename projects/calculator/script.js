@@ -8,6 +8,9 @@ const del = document.querySelector('.delete');
 const equal = document.querySelector('.equal');
 const decimalNumber = document.querySelector('.dot') 
 const changeValueButton = document.querySelector('.change')
+// buttonSFX
+const buttonClick = new Audio('/projects/calculator/sounds/definitive-button-272973.wav')
+buttonClick.volume = 0.5
 // Operation variables
 let firstNumber;
 let secondNumber;
@@ -41,8 +44,17 @@ function operate(operator, n1, n2) {
     };
     return operationResult
 };
+// Check result function
+function checkResult() {
+    if (result.toString().length > 15) {
+        clear()
+        panel.textContent = 'SYNTAX ERROR'
+    } 
+}
 // Operation result function
 function equalOperation() {
+    buttonClick.currentTime = 0;
+    buttonClick.play()
     if (firstNumber !== undefined && currentOperator !== undefined && secondNumber !== undefined ) {
     aValue = Number(firstNumber)
     bValue = Number(secondNumber)
@@ -51,10 +63,13 @@ function equalOperation() {
     panel.textContent = result
     firstNumber = result
     secondNumber = undefined
+    checkResult()
     }
 }
 // Clear screen function
 function clear() {
+    buttonClick.currentTime = 0;
+    buttonClick.play()
     panel.textContent = ''
     record.textContent = ''
     firstNumber = undefined
@@ -66,7 +81,17 @@ function clear() {
 }
 // Delete last character function
 function deleteLast() {
-    if (panel.textContent === firstNumber.toString()) {
+    buttonClick.currentTime = 0;
+    buttonClick.play()
+    if (panel.textContent.length > 12 || panel.textContent === 'SYNTAX ERROR') {
+        panel.textContent = ''
+        firstNumber = undefined
+        secondNumber = undefined
+        currentOperator = undefined
+        result = undefined
+        aValue = undefined
+        bValue = undefined
+    } else if (panel.textContent === firstNumber.toString()) {
     let lastChar = panel.textContent.slice(0, -1)
     panel.textContent = lastChar
     result = lastChar
@@ -83,7 +108,17 @@ function deleteLast() {
 }
 // Decimal button function
 function decimalValue() {
-    if (panel.textContent === secondNumber && secondNumber.includes('.') === false) {
+    buttonClick.currentTime = 0;
+    buttonClick.play()
+    if (panel.textContent.length > 12 || panel.textContent === 'SYNTAX ERROR') {
+        panel.textContent = ''
+        firstNumber = undefined
+        secondNumber = undefined
+        currentOperator = undefined
+        result = undefined
+        aValue = undefined
+        bValue = undefined
+    } else if (panel.textContent === secondNumber && secondNumber.includes('.') === false) {
         panel.textContent += '.'
         secondNumber = panel.textContent
     } else if (panel.textContent === firstNumber.toString() && firstNumber.toString().includes('.') === false) {
@@ -93,7 +128,17 @@ function decimalValue() {
 }
 // Change signal button function
 function changeSignal() {
-     if (Number(secondNumber) > 0 && panel.textContent === secondNumber.toString()) {
+    buttonClick.currentTime = 0;
+    buttonClick.play()
+             if (panel.textContent.length > 12 || panel.textContent === 'SYNTAX ERROR') {
+            panel.textContent = ''
+            firstNumber = undefined
+            secondNumber = undefined
+            currentOperator = undefined
+            result = undefined
+            aValue = undefined
+            bValue = undefined
+        } else if (Number(secondNumber) > 0 && panel.textContent === secondNumber.toString()) {
         panel.textContent = '-' + panel.textContent
         secondNumber = panel.textContent
     } else if (Number(secondNumber) < 0 && panel.textContent === secondNumber.toString()) {
@@ -110,7 +155,9 @@ function changeSignal() {
 // Numbers button interaction
 numbers.forEach(function(number) {
     number.addEventListener('click', function() {
-        if (panel.textContent.length > 12) {
+    buttonClick.currentTime = 0;
+    buttonClick.play()
+        if (panel.textContent.length > 12 || panel.textContent === 'SYNTAX ERROR') {
             panel.textContent = ''
             firstNumber = undefined
             secondNumber = undefined
@@ -134,7 +181,17 @@ numbers.forEach(function(number) {
 // Operators button interaction
 operator.forEach(function(operator) {
     operator.addEventListener('click', function() {
-        if (secondNumber !== undefined){
+    buttonClick.currentTime = 0;
+    buttonClick.play()
+        if (panel.textContent.length > 12 || panel.textContent === 'SYNTAX ERROR') {
+            panel.textContent = ''
+            firstNumber = undefined
+            secondNumber = undefined
+            currentOperator = undefined
+            result = undefined
+            aValue = undefined
+            bValue = undefined
+        } else if (secondNumber !== undefined){
             equalOperation()
         } else if (firstNumber === undefined) {
 

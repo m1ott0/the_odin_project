@@ -3,61 +3,132 @@
     src: url('./fonts/Digital7Italic-BW658.ttf') format('truetype');
 }
 body{
-    background-color: rgb(253, 242, 208);
+    background-color: rgb(250, 243, 223);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 90vh;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
 }
 .calculator{
     display: flex;
-    width: 440px;
+    width: 480px;
     flex-direction: column;
-    height: 690px;
+    height: 790px;
+    margin-top: 40px;
+    align-items: center;
+    background-color: rgb(119, 118, 118);
+    border: 1.5px solid rgb(78, 78, 78);
+    border-top: solid rgb(24, 24, 24);
+    border-radius: 30px;
+    box-shadow:
+    0px 0px 08px hsl(0deg 0% 0% / 0.41),
+    inset 0 0 08px rgba(0, 0, 0, 0.5);
+}
+.fancy{
+    display: flex;
+    width: 480px;
+    height: 100px;
+    margin-top: 90px;
+    justify-content: space-around;
+}
+.fancyTitle{
+    font-family: Inter;
+    color:white;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-top: 10px;
+    letter-spacing: 1px;
+    font-weight: 1000px
+}
+.fancyDisplay{
+    display: flex;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(73, 61, 61);
+    border-radius: 06px;
+    margin-bottom: 20px;
+    border-bottom: 4px solid rgb(119, 118, 118);
+    border-left: 3px solid rgb(119, 118, 118);
+    border-right: 3px solid rgb(119, 118, 118);
+    border-top: 2px solid rgb(119, 118, 118);
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5);
+}
+.upper{
+    box-shadow:  0 4px 10px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    display: flex;
+    width: 476px;
+    height: 250px;
+    margin-bottom: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 5px ;
+    border-bottom-right-radius: 5px ;
+    border: solid  rgb(24, 24, 24);
+    background-color: rgb(24, 24, 24);
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 255, 255);
-    border-radius: 30px;
-    
 
 }
 .display{
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5);
     font-family: 'CalculatorFont';
-    height: 100px;
-    width: 370px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: rgb(96, 114, 67);
+    height: 110px;
+    width: 420px;
+    margin-top: 5px;
+    margin-bottom:90px;
+    background-color: rgb(96, 119, 93);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     text-align: end;
+    border-bottom: 4px solid rgb(119, 118, 118);
+    border-left: 3px solid rgb(119, 118, 118);
+    border-right: 3px solid rgb(119, 118, 118);
+    border-top: 2px solid rgb(119, 118, 118);
+    padding-bottom:9px;
 }
 .panel{
-padding-top: 40px;
-font-size: 30px;
+padding-top: 30px;
+font-size: 54px;
 height: 40px;
-width: 370px;
+width: 410px;
 border-radius: 20px;
 }
 .record{
 padding-top: 10px;
 height: 40px;
-width: 370px;
+width: 400px;
+font-size: 25px;
 border-radius: 20px;
+}
+.square{
+    height: 48px;
+    width: 50px;
+    border: 0.8px solid rgb(119, 118, 118)
 }
 .buttons{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
 }
 button{
-    width: 80px;
-    height: 77px;
-    border-radius: 20px ;
-    font-size: 25px;
+    width: 90px;
+    height: 82px;
+    border-radius: 20px;
+    margin-bottom: 3px;
+    font-size: 28px;
+    border-bottom: 2px black;
+    border-left: 2px black;
+    border-right: 2px black;
     font-family: Inter;
-    margin-right: 12px;
+    margin-right: 15px;
     color: white;
-    background-color: gray;
+    background-color: rgb(48, 47, 47);
+    box-shadow: 0px 0px 08px hsl(0deg 0% 0% / 0.41);
 }
 .firstColumn,
 .secondColumn,
@@ -69,11 +140,34 @@ button{
 
 }
 #equalButton{
-    height: 164px;
+    height: 176px;
 }
 #AC,
 #DEL{
-    background-color: rgb(233, 115, 19);
+    background-color: rgb(160, 56, 87);
 }
-
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 22px;
+    height: 22px;
+    transition: transform 0.5 ease;
+    margin-left: 04px;
+}
+.link{
+    transition: 0.5s;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: transform 0.5 ease;
+}
+.link:hover{
+    text-decoration: underline;
+    color: black;
+}
+img:hover{
+    opacity: 70%;
+}
 
