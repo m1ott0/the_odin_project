@@ -34,7 +34,7 @@
 | [**Landing Page**](projects/landing_page/) | An astronomy-themed landing page. | [View](https://m1ott0.github.io/the_odin_project/projects/landing_page/) |
 | [**Rock Paper Scissors**](projects/rock-paper-scissors/) | An interactive JavaScript game. | [View](https://m1ott0.github.io/the_odin_project/projects/rock-paper-scissors/) |
 | [**Etch-a-Sketch**](projects/etch-a-sketch/) | A customizable interactive drawing grid. | [View](https://m1ott0.github.io/the_odin_project/projects/etch-a-sketch/) |
-| [**Calculator**](projects/etch-a-sketch/) | A functional and precise browser calculator. | [View](https://m1ott0.github.io/the_odin_project/projects/calculator/) |
+| [**Calculator**](projects/calculator/) | A functional and precise browser calculator. | [View](https://m1ott0.github.io/the_odin_project/projects/calculator/) |
 
 ## Repository Structure
 

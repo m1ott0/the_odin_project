@@ -12,7 +12,7 @@ The project concept it's a simple and functional calculator, with basic operatio
 
 ## About
 
-The project do basic operations with two numbers and an operator(like '+'), you can use it by clicking on the number that you want, then using decimal or change signal buttons(if you want), an operator, and finally the last number, and at the end, you will see the result at the bottom of the display, and the record of the operation at the top of it. If the result exceed the number of 15 characteres, it will popup a 'SYNTAX ERROR' on the screen, and you will just have to press any button to come back to reset it.
+The project do basic operations with two numbers and an operator(like '+'), you can use it by clicking on the number that you want, then using decimal or change signal buttons(if you want), an operator, the last number, and then, press the equal button to see the result of the operation at the bottom of the display, and the record of the operation at the top of it. If the result exceed the limit number of 15 characteres, it will popup a 'SYNTAX ERROR' on the screen, and you will just have to press any button to reset it.
 
 ## Features
 
@@ -89,7 +89,7 @@ calculator/
 
 ![Initial Prototype](./screenshots/initial-prototype.png)
 
-The core of my Initial Prototype was to do a simple white calculator structure with orange and gray buttons, but after some time on the project, i've change my mind and decided to implement a more complex calculator design with black display and title backgrounds, gray structure,  dark-gray and pink buttons, and a solar panel based on some cientific calculators that has it. ate the start, the solar panel was containing the record of the operations, but then, i've turned him into a separate fancy feature, and put the record above the main display. And the last thing i've changed in the design is the position of the credits view, puting him into the bottom of the page. 
+The core idea of my Initial Prototype was to do a simple white calculator structure with orange and gray buttons, but after some time on the project, i've change my mind and decided to implement a more complex calculator design with black display and title backgrounds, gray structure,  dark-gray and pink buttons, and a solar panel based on some cientific calculators that has it. ate the start, the solar panel was containing the record of the operations, but then, i've turned him into a separate fancy feature, and put the record above the main display. And the last thing i've changed in the design is the position of the credits view, puting him into the bottom of the page. 
 
 ## What I Learned
 
