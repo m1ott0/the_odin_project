@@ -9,7 +9,7 @@ const equal = document.querySelector('.equal');
 const decimalNumber = document.querySelector('.dot') 
 const changeValueButton = document.querySelector('.change')
 // buttonSFX
-const buttonClick = new Audio('./sounds/click.wav')
+const buttonClick = new Audio('sounds/click.wav')
 buttonClick.volume = 0.5
 // Operation variables
 let firstNumber;
