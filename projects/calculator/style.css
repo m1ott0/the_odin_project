@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'CalculatorFont';
-    src: url('./fonts/Digital7Italic-BW658.ttf') format('truetype');
+    src: url('./fonts/calculator.ttf') format('truetype');
 }
 body{
     background-color: rgb(250, 243, 223);
