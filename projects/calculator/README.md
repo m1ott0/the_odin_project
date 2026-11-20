@@ -75,6 +75,7 @@ calculator/
 │       ├── calculator.ttf
 ├── images/
 │       ├── github.png
+│       ├── icon.png
 ├── sounds/
 │       ├── click.wav
 ├── screenshots/
