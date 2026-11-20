@@ -12,7 +12,7 @@ The project concept it's a simple and functional calculator, with basic operatio
 
 ## About
 
-The project do basic operations with two numbers and an operator(like '+'), you can use it by clicking on the number that you want, then using decimal or change signal buttons(if you want), an operator, the last number, and then, press the equal button to see the result of the operation at the bottom of the display, and the record of the operation at the top of it. If the result exceed the limit number of 15 characteres, it will popup a 'SYNTAX ERROR' on the screen, and you will just have to press any button to reset it.
+The project do basic operations with two numbers and an operator(like '+'), you can use it by clicking on the number that you want, then using decimal or change signal buttons(if you want), an operator, the last number, and then, press the equal button to see the result of the operation at the bottom of the display, and the record of the operation at the top of it. If the result exceed the limit number of 15 characteres, it will popup a 'SYNTAX ERROR' on the screen, and you will just have to press any button tocd reset it.
 
 ## Features
 
